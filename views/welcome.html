@@ -1,0 +1,213 @@
+<header>
+    <div class="container welcome"><a id="bizName" href="#!/welcome"><img src="../res/logo2.png" alt="Please Reload"></a></div>
+</header>
+<div class="jumbotron">
+
+    <div id="black"></div>
+
+    <div class="animated fadeInDown">
+        <div class="container">
+            <div class="col-md-12">
+                <h1>This is a movement of makers. Of Leaders. Of Disruptors.</h1>
+                <hr style="width:25%;text-align:left;margin:30px 0; border:2.5px solid rgba(250, 0, 118, 1) ;" />
+            </div>
+            <div class="col-md-8">
+                <h2 class="subtitle">Learn, Grow, Build, Connect & Launch
+                    <a 
+                        href="https://twitter.com/naijahacks"
+                        target="_blank" style="color: inherit"
+                        rel="noopener noreferrer">@naijahacks
+                    </a>
+                </h2>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container" id="main-wrapper">
+    <div class="col-md-7 main-content">
+        <h3>We believe that Naija Hacks will inspire participants to use technology to make a difference </h3>
+        <p>We've designed Naija Hacks to be rewarding and engaging. Each and every aspect of the Hackathon is designed to welcome, encourage and nurture you, the Hacker. The prizes below are a small part of the Naija Hacks experience. </p>
+        <p>Naija Hacks starts online and ends with a Demo day and award ceremony in Lagos. An international team from Nigeria, US, Canada, the UK and Singapore will mentor the Hackers.  </p>
+        <div class="white-box">
+            <h3 class="text-center">Prizes </h3>
+            <ul>
+                <li ng-repeat="prize in prizes" 
+                    style="list-style-type: none;
+                        border-right: 1px solid #eee;
+                        border-top: 1px solid #eee;
+                        border-bottom: 1px solid #eee;
+                        padding: 2rem 3rem 2rem 0"
+                    id={{prize.id}}
+                >
+                        
+                    <i class="text-center center-block" style="font-size: 3rem">
+                        <i class="fa fa-trophy"></i>
+                    </i>
+                    <p class="">
+                        {{prize.name}} for the
+                        <a class="bName" target="_blank">
+                            {{prize.description}}
+                        </a>({{prize.value}})
+                    </p>
+                    <img ng-show="prize.img" class="img-responsive" width="411px"
+                    src={{prize.img}}><img>
+                    <!-- <hr> -->
+                </li>
+            </ul>
+        </div>
+        <!-- <p class="final-cta">Naija Hacks is made possible via a truly brilliant relationship between Lush Plans and our Partners</p> -->
+    </div>
+    <div class="col-md-4 col-md-offset-1">
+        <div class="form-container">
+            <h3 class="text-center">Something for everyone </h3>
+            <p class="text-center">Technologies you'll learn & work with</p>
+            <ul>
+                <li ng-repeat="technology in technologies" 
+                style="list-style-type: none;
+                    border-bottom: 1px solid rgba(250, 0, 118, 1);
+                    border-bottom-right-radius: 2em;
+                    margin: auto;
+                    padding: 2rem 3rem 2rem 0">
+                        
+                    <p class="text-center center-block">
+                        <a  class="bName" 
+                            href={{technology.url}} 
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="img-responsive center-block text-center" width="51px"
+                            src={{technology.img}}><img>
+                            {{technology.description}}
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="white-box">
+            <h3 class="text-center">Dates </h3>
+            <p>
+                Online on 
+                <a  class="bName" 
+                    rel="noopener noreferrer">Aug 10 - Aug 24, 2018
+                </a>
+            </p>
+            <p>
+                Demo/Award ceremony on 
+                <a  class="bName" 
+                    rel="noopener noreferrer">August 25
+                </a>
+            </p>
+        </div>
+        <div class="white-box">
+            <h3 class="text-center">Sponsors </h3>
+            <p class="text-center">We appreciate you</p>
+            <ul>
+                <li ng-repeat="sponsor in sponsors" 
+                style="list-style-type: none;
+                    border-right: 1px solid rgba(250, 0, 118, 1);
+                    border-top: 1px solid rgba(250, 0, 118, 1);
+                    border-bottom: 1px solid rgba(250, 0, 118, 1);
+                    border-top-right-radius: 2em;
+                    border-bottom-right-radius: 2em;
+                    margin: auto;
+                    padding: 2rem 3rem 2rem 0">
+                        
+                    <p class="text-center center-block">
+                        <a  class="bName" 
+                            href={{sponsor.url}} 
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="img-responsive center-block" width="102px"
+                            src={{sponsor.img}}><img>
+                            {{sponsor.description}}
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="white-box">
+            <h3 class="text-center">Location </h3>
+            <p>Naija Hacks will start online. The Demo day and award ceremony will be held in Lagos.</p>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=lagos, Nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{text-align:center;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style>
+            </div>
+        </div>
+        <div class="form-container" style="margin-top: 0">
+            <h4 class="final-cta">Want to support Naija Hacks or chat about why we're doing this...?</h4>
+            <br>
+            <p> 
+                Meet 
+                <a  class="bName" 
+                    href="https://www.linkedin.com/in/nickku/"
+                    target="_blank"
+                    rel="noopener noreferrer">Uchi
+                </a> and the 
+                <a  class="bName" 
+                    href="http://lushplans.com/team"
+                    target="_blank"
+                    rel="noopener noreferrer">Lush Plans team
+                </a>
+            </p>
+            <p> 
+                Email us at 
+                <a  class="bName" 
+                    href="mailto:info@lushplans.com"
+                    target="_blank"
+                    rel="noopener noreferrer"> info@lushplans.com
+                </a>
+            </p>
+            <!-- <form method="post" name="frmContentDownload">
+                <div><label>First Name</label><input ng-click="activate()" class="form-control" ng-model="FirstName1" type="text"
+                        value="" /></div>
+                <div><label>Last Name</label><input ng-click="activate()" class="form-control" ng-model="LastName1" type="text"
+                        value="" /></div>
+                <div><label>Phone number</label><input ng-click="activate()" class="form-control" ng-model="phoneNumber" type="tel"
+                        value="" /></div>
+                <div><label>Email</label><input ng-click="activate()" class="form-control" ng-model="email" type="email" value=""
+                    /></div>
+                <div><label>Instagram</label><input ng-click="activate()" class="form-control" ng-model="instagram" type="text"
+                        value="" /></div>
+                <div><label>Twitter</label><input ng-click="activate()" class="form-control" ng-model="twitter" type="text" value=""
+                    /></div>
+                <div>
+                    <p><span ng-repeat="err in saveError" class="text-danger">{{err.msg}}<br></span></p>
+                    <a ng-show="!submitted" class="btn btn-primary btn-lg btn-block emailBtn"
+                        ng-click="saveUserDetail()" 
+                        ng-hide="!FirstName1 || !LastName1 || !(phoneNumber || email)">Send Request</a>
+                    <a ng-show="submitted" class="btn btn-lg btn-block" ng-disabled="true">Your info is submitted</a>
+                </div>
+            </form> -->
+        </div>
+        <div class="white-box">
+            <h3 class="text-center">More questions </h3>
+            <p>
+                Learn more about Hackathons on the  
+                <a  class="bName" 
+                    href="https://mlh.io/faq/"
+                    target="_blank"
+                    rel="noopener noreferrer">Major League Hacking FAQ page
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+<style type="text/css">
+    .bName {
+        font-weight: 800;
+        color: black;
+        margin-top: -6px;
+        padding-left: 5px;
+        /*font-size: 18pt;*/
+    }
+
+    .bName:hover, .bName:active {
+        color: black;
+        text-decoration: none;
+
+    }
+    .white-box li {
+        margin-bottom: 40px;
+    }
+</style>
